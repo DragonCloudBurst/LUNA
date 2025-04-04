@@ -4,7 +4,7 @@ a lightweight notepad application.
 ## Description
 LUNA, or Lightweight Universal Notes Application, was originally created for myself because I couldn't find a plaintext editor that I liked enough. LUNA aims to provide a simple, no-nonsense way to create and edit text files. It can also import formats like .md and .rtf; however, please note that the exporting of rtf files has yet to be tested. txt and md files have been tested and should work smoothly with LUNA. 
 
-[LUNA](https://img.itch.zone/aW1hZ2UvMzMzMjkzOC8xOTkwNzE0My5wbmc=/347x500/hctLtw.png)
+![LUNA](https://img.itch.zone/aW1hZ2UvMzMzMjkzOC8xOTkwNzE0My5wbmc=/347x500/hctLtw.png)
 
 ## Getting Started
 
