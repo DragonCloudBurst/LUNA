@@ -3,6 +3,8 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LUNA
 {
@@ -12,8 +14,6 @@ namespace LUNA
         public Form1()
         {
             InitializeComponent();
-            
-
         }
 
         private void newButton_Click(object sender, EventArgs e)
@@ -53,12 +53,75 @@ namespace LUNA
 
                 textBox.Text = text;
             }
+            
         }
-
+        
+        
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
+            
             int charCount = textBox.Text.Length;
             charCountLabel.Text = $"characters: {charCount}";
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+        
+        // function from here, thank god, credit to this person
+        // https://learn.microsoft.com/en-us/answers/questions/530055/how-to-color-a-specific-string-s-in-richtextbox-te
+        void HighlightPhrase(RichTextBox box, string phrase, Color color)
+        {
+            string results = "";
+            int pos = box.SelectionStart;
+            string s = box.Text;
+            for (int ix = 0; ix < s.Length; ix++)
+            {
+                int jx = s.IndexOf(phrase, ix, StringComparison.CurrentCultureIgnoreCase);
+                if (jx < 0)
+                {
+                    break;
+                }
+                else
+                {
+                    box.SelectionStart = jx;
+                    box.SelectionLength = phrase.Length;
+                    box.SelectionColor = color;
+                    ix = jx + 1;
+                    results+= jx;
+                }
+            }
+            box.SelectionStart = 0;
+            box.SelectionLength = 0;
+            
+        }
+
+        private void render_Click(object sender, EventArgs e)
+        {
+            List<string> MarkdownBaseElements = new List<string>
+            {
+                "#", "##", "###", "~~", "*", "**", "---"
+            };
+            
+            // headers
+            HighlightPhrase(textBox, MarkdownBaseElements[0], Color.Firebrick);
+            HighlightPhrase(textBox, MarkdownBaseElements[1], Color.Firebrick);
+            HighlightPhrase(textBox, MarkdownBaseElements[2], Color.Firebrick);
+            
+            //strikethrough
+            HighlightPhrase(textBox, MarkdownBaseElements[3], Color.Teal);
+            
+            //italics
+            HighlightPhrase(textBox, MarkdownBaseElements[4], Color.CornflowerBlue);
+            
+            // bold
+            HighlightPhrase(textBox, MarkdownBaseElements[5], Color.Fuchsia);
+            
+            // horizontal rule
+            HighlightPhrase(textBox, MarkdownBaseElements[6], Color.OrangeRed);
+            
+        }
     }
 }
+
