@@ -10,6 +10,7 @@ LUNA, or Lightweight Universal Notes Application, was originally created for mys
 
 ### Dependencies
 - So far, I can say with absolute certainty that LUNA will function on Windows 11. I have not yet been able to test it on other versions of Windows, MacOS, or Linux.
+- LUNA is also available for download on [itch.io](https://kumori-arashi.itch.io/luna).
 
 ### Installing / Executing
 - You should not need to downlad anything else to run LUNA. Simply download the .exe and run it. Please let me know if you run into any issues.
