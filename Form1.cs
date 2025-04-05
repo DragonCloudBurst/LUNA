@@ -101,7 +101,7 @@ namespace LUNA
         {
             List<string> MarkdownBaseElements = new List<string>
             {
-                "#", "##", "###", "~~", "*", "**", "---"
+                "#", "##", "###", "~~", "*", "**", "---", ">", "-", "`", "```", "|", "=="
             };
             
             // headers
@@ -121,6 +121,21 @@ namespace LUNA
             // horizontal rule
             HighlightPhrase(textBox, MarkdownBaseElements[6], Color.OrangeRed);
             
+            // blockquote 
+            HighlightPhrase(textBox, MarkdownBaseElements[7], Color.Lime);
+            
+            // dash / list bullet
+            HighlightPhrase(textBox, MarkdownBaseElements[8], Color.Purple);
+            
+            // codeblock
+            HighlightPhrase(textBox, MarkdownBaseElements[9], Color.Crimson);
+            HighlightPhrase(textBox, MarkdownBaseElements[10], Color.Crimson);
+            
+            // pipe character
+            HighlightPhrase(textBox, MarkdownBaseElements[11], Color.Blue);
+            
+            //highlight
+            HighlightPhrase(textBox, MarkdownBaseElements[12], Color.Cyan);
         }
     }
 }
