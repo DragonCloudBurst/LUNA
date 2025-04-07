@@ -11,7 +11,7 @@ As of 1.5, LUNA now has a button that will highlight basic markdown syntax when 
 ## Getting Started
 
 ### Dependencies
-- So far, I can say with absolute certainty that LUNA will function on Windows 11. I have not yet been able to test it on other versions of Windows, MacOS, or Linux.
+- So far, I can say with absolute certainty that LUNA will function on Windows 11 and Windows 10. I have not yet been able to test it on other versions of Windows, MacOS, or Linux.
 - LUNA is also available for download on [itch.io](https://kumori-arashi.itch.io/luna).
 
 ### Installing / Executing
