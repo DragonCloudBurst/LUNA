@@ -135,6 +135,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="images\luna.ico" />
     <None Include="Resources\luna1.png" />
     <None Include="Resources\luna.png" />
