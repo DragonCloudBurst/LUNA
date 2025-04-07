@@ -36,6 +36,8 @@
             this.charCountLabel = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.RichTextBox();
             this.render = new System.Windows.Forms.Button();
+            this.darkMode = new System.Windows.Forms.Button();
+            this.lightMode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +101,7 @@
             // 
             this.charCountLabel.AutoSize = true;
             this.charCountLabel.Font = new System.Drawing.Font("MV Boli", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.charCountLabel.Location = new System.Drawing.Point(437, 298);
+            this.charCountLabel.Location = new System.Drawing.Point(550, 387);
             this.charCountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.charCountLabel.Name = "charCountLabel";
             this.charCountLabel.Size = new System.Drawing.Size(98, 18);
@@ -113,7 +115,7 @@
             this.textBox.Location = new System.Drawing.Point(8, 44);
             this.textBox.Margin = new System.Windows.Forms.Padding(2);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(571, 248);
+            this.textBox.Size = new System.Drawing.Size(705, 336);
             this.textBox.TabIndex = 7;
             this.textBox.Text = "";
             this.textBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -127,16 +129,44 @@
             this.render.Name = "render";
             this.render.Size = new System.Drawing.Size(200, 32);
             this.render.TabIndex = 8;
-            this.render.Text = "render markdown";
+            this.render.Text = "highlight markdown";
             this.render.UseVisualStyleBackColor = false;
             this.render.Click += new System.EventHandler(this.render_Click);
+            // 
+            // darkMode
+            // 
+            this.darkMode.BackColor = System.Drawing.Color.LightCyan;
+            this.darkMode.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darkMode.Location = new System.Drawing.Point(653, 8);
+            this.darkMode.Margin = new System.Windows.Forms.Padding(2);
+            this.darkMode.Name = "darkMode";
+            this.darkMode.Size = new System.Drawing.Size(60, 32);
+            this.darkMode.TabIndex = 9;
+            this.darkMode.Text = "dark";
+            this.darkMode.UseVisualStyleBackColor = false;
+            this.darkMode.Click += new System.EventHandler(this.darkMode_Click);
+            // 
+            // lightMode
+            // 
+            this.lightMode.BackColor = System.Drawing.Color.LightCyan;
+            this.lightMode.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lightMode.Location = new System.Drawing.Point(588, 8);
+            this.lightMode.Margin = new System.Windows.Forms.Padding(2);
+            this.lightMode.Name = "lightMode";
+            this.lightMode.Size = new System.Drawing.Size(60, 32);
+            this.lightMode.TabIndex = 10;
+            this.lightMode.Text = "light";
+            this.lightMode.UseVisualStyleBackColor = false;
+            this.lightMode.Click += new System.EventHandler(this.lightMode_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(585, 321);
+            this.ClientSize = new System.Drawing.Size(724, 409);
+            this.Controls.Add(this.lightMode);
+            this.Controls.Add(this.darkMode);
             this.Controls.Add(this.render);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.charCountLabel);
@@ -146,13 +176,16 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(15, 15);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "LUNA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button darkMode;
+        private System.Windows.Forms.Button lightMode;
 
         private System.Windows.Forms.Button render;
 
