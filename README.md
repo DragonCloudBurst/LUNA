@@ -25,3 +25,4 @@ As of 1.5, LUNA now has a button that will highlight basic markdown syntax when 
 ## Credits 
 - Programming, UI, icon: @DragonCloudBurst / kumori (you are here)
 - README template: @DomPizzie | [link](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+- this one person on microsoft forums | [link](https://learn.microsoft.com/en-us/answers/questions/530055/how-to-color-a-specific-string-s-in-richtextbox-te)
