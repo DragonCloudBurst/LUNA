@@ -6,7 +6,7 @@ LUNA, or Lightweight Universal Notes Application, was originally created for mys
 
 As of 1.5, LUNA now has a button that will highlight basic markdown syntax when pressed. Please note that there is currently a small bug where, if your cursor is immediately next to or selecting characters such as *, #, etc, the next text you type will also be in that color. This is unintentional and I'm planning to fix it if I can. Furthermore, note that this will not actually break the file- the highlighting is just for the sake of visually discerning markdown. Pressing the button will not modify the file's actual text.
 
-![LUNA](https://img.itch.zone/aW1hZ2UvMzMzMjkzOC8xOTkwNzE0My5wbmc=/347x500/hctLtw.png)]
+![LUNA](https://img.itch.zone/aW1hZ2UvMzMzMjkzOC8xOTkwNzE0My5wbmc=/347x500/hctLtw.png)
 ![LUNA](https://img.itch.zone/aW1hZ2UvMzMzMjkzOC8yMDYwNDEwMi5wbmc=/347x500/VrJG3i.png)
 
 
