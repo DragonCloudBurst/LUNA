@@ -123,14 +123,14 @@ namespace LUNA
             HighlightPhrase(textBox, MarkdownBaseElements[5], Color.Fuchsia);
 
             // horizontal rule
-            HighlightPhrase(textBox, MarkdownBaseElements[6], Color.OrangeRed);
-
-            // blockquote 
-            HighlightPhrase(textBox, MarkdownBaseElements[7], Color.Lime);
-
+            HighlightPhrase(textBox, MarkdownBaseElements[6], Color.Purple);
+            
             // dash / list bullet
             HighlightPhrase(textBox, MarkdownBaseElements[8], Color.Purple);
 
+            // blockquote 
+            HighlightPhrase(textBox, MarkdownBaseElements[7], Color.Lime);
+            
             // codeblock
             HighlightPhrase(textBox, MarkdownBaseElements[9], Color.Crimson);
             HighlightPhrase(textBox, MarkdownBaseElements[10], Color.Crimson);
