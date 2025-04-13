@@ -15,10 +15,12 @@ As of 1.5, LUNA now has a button that will highlight basic markdown syntax when 
 
 ### Dependencies
 - So far, I can say with absolute certainty that LUNA will function on Windows 11 and Windows 10. I have not yet been able to test it on other versions of Windows, MacOS, or Linux.
+- It seems that LUNA may also work with Wine on Linux systems.
 - LUNA is also available for download on [itch.io](https://kumori-arashi.itch.io/luna).
+  
 
 ### Installing / Executing
-- You should not need to downlad anything else to run LUNA. Simply download the .exe and run it. Please let me know if you run into any issues.
+- You should not need to downlad anything else to run LUNA. Simply download the .exe from the releases and run it. Please let me know if you run into any issues.
 
 ## Technologies used (so far)
 - C#
